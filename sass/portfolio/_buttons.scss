@@ -1,0 +1,49 @@
+.button-list {
+  display: flex;
+}
+
+.card-button {
+  padding: 94px 0;
+
+}
+
+
+.card-button__filtr-button {
+  color: var(--black-text);
+  background-color: var(--grey-background); 
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-radius: 4px;
+
+  padding: 6px 22px;
+  border: none;
+
+  transition: background-color 250ms var(--timing-function);
+
+}
+
+&:hover,
+&:focus {
+  color: var(--white-text);
+  background-color: var(--blue-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  
+}
+
+.button-list {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  justify-content: center;
+  padding-left: 0;
+}
+
+&:not(:last-child) {
+  margin-right: 8px;
+  
+}
