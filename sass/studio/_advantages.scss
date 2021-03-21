@@ -18,14 +18,11 @@
 .advantages-list__item {
   width: 270px;
 
-  
+  &:not(:last-child) {
+
+    margin-right: 30px;}
 }
 
-&:not(:last-child) {
-
-  margin-right: 30px;
-
-}
 
 .advantages-image {
   justify-content: center;

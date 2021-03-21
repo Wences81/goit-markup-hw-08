@@ -82,12 +82,13 @@
 
   transition: color 250ms var(--timing-function);
 
- 
-}
 
-&:hover,
-&:focus {
-  color: var(--blue-text);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-text);}
+
+ 
 }
 
 
@@ -137,12 +138,14 @@
 
   transition: background-color 250ms var(--timing-function);
 
+  &:hover,
+  &:focus {
+    background-color: var(--blue-text);}
+
+
 }
 
-&:hover,
-&:focus {
-  background-color: var(--blue-text);
-}
+
   
 
 .social-footer__icons {
