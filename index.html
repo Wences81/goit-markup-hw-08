@@ -22,11 +22,16 @@
 
     <nav class="site-header__nav">
     <a href="" class="site-header__logo">Web<span class="site-header__span">Studio</span></a>
-    <button type="button">
-      <svg width="40px" height="40px">
-        <use href="./images/sprite.svg#icon-close_40px"></use>
+    <button type="button" class="mobile-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+      <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+        <use class="icon-close" href="./images/sprite.svg#icon-close_40px"></use>
+        <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
       </svg>
     </button>
+
+    <div class="menu-container" id="menu-container" data-menu>
+      контент меню
+    </div>
     <ul class="site-nav">
       <li class="site-nav__item"><a href="" class="site-nav__link current" >Студия</a></li>
       <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
