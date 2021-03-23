@@ -28,17 +28,38 @@
 
 
 .hero__hero-title {
-  margin: 0;
-  padding-top: 0px;
-  padding-bottom: 30px;
 
+  @media screen and (min-width: 1200px) {
+    
+  
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 30px;
+
+    color: var(--white-text);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;}
+
+  @media screen and (max-width: 1199px)  {
+
+    margin-bottom: 30px;
   
 
-  color: var(--white-text);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+      
+  }
 }
 
 .hero__hero-button {

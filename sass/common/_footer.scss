@@ -7,8 +7,14 @@
 }
 
 .footer-section {
-  display: flex;
-  align-items: baseline;
+
+  @media screen and (min-width: 1200px) {
+  
+
+
+    display: flex;
+    align-items: baseline;
+  }
   
 }
 
@@ -83,7 +89,6 @@
   transition: color 250ms var(--timing-function);
 
 
-
   &:hover,
   &:focus {
     color: var(--blue-text);}
@@ -156,7 +161,13 @@
 
 
 .footer-third {
-  margin-left: 63px;
+
+  @media screen and (min-width: 1200px) {
+    
+
+    margin-left: 63px;
+
+  }
 
 }
 

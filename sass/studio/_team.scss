@@ -20,12 +20,18 @@
 
 .team-list {
 
-  display: flex;
-  padding-bottom: 0px;
-  padding-left: 0;
-  justify-content: space-between;
-  margin-top: 0;
-  margin-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    
+
+
+    display: flex;
+    padding-bottom: 0px;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+  }  
+
 }
 
 .team-list__item {
