@@ -1,7 +1,15 @@
 .team {
-  background-color: var(--grey-background);
-  padding-bottom: 94px;
-  padding-top: 94px;
+
+  @media screen and (min-width: 1200px) {
+    background-color: var(--grey-background);
+    padding-bottom: 94px;
+    padding-top: 94px;}
+
+  @media screen and (max-width: 1199px) {
+    background-color: var(--grey-background);
+    padding-bottom: 60px;
+    padding-top: 60px;}
+  
 }
 
 
@@ -30,7 +38,15 @@
     justify-content: space-between;
     margin-top: 0;
     margin-bottom: 0;
-  }  
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 0px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-left: 0px;
+  }
 
 }
 
