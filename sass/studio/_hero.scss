@@ -1,101 +1,101 @@
-.hero {
+// .hero {
 
-  @media screen and (min-width: 1200px) {  
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+//   @media screen and (min-width: 1200px) {  
+//     max-width: 1600px;
+//     height: 600px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-image: linear-gradient(
+//     to right,
+//     rgba(47, 48, 58, 0.4),
+//     rgba(47, 48, 58, 0.4)
+//   ),
+
+//       url("../images/Imgback.jpg");
+
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;}
+
+//   @media screen and (min-width: 480px) and (max-width: 767px) {
+
+//   }
+
+// }
+
+// .hero {
+//   background-color: var(--black-background);
+//   text-align: center;
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+// }
+
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/studio/overlay-480.jpg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background: rgba(47, 48, 58, 0.4);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ),
-
-      url("../images/Imgback.jpg");
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;}
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-
+    rgba(47, 48, 58, 0.4)),
+      url(../images/studio/overlay-480.jpg@2x.jpg);
   }
 
-}
-
-.hero {
-  background-color: var(--black-background);
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-
-// .hero {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-top: 118px;
-//   padding-bottom: 118px;
-//   text-align: center;
-//   background-image: linear-gradient(
-//     to right,
-//     rgba(47, 48, 58, 0.4),
-//     rgba(47, 48, 58, 0.4)),
-//     url(../images/studio/overlay-480.jpg.jpg);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center; 
-//   background: rgba(47, 48, 58, 0.4);
-
-//   @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     background-image: linear-gradient(
-//     to right,
-//     rgba(47, 48, 58, 0.4),
-//     rgba(47, 48, 58, 0.4)),
-//       url(../images/studio/overlay-480.jpg@2x.jpg);
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)),
-//       url(../images/studio/overlay-768.jpg.jpg);
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url(../images/studio/overlay-768.jpg.jpg);
     
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//            to right,
-//          rgba(47, 48, 58, 0.4),
-//          rgba(47, 48, 58, 0.4)),
-//         url(../images/studio/overlay-768.jpg@2x.jpg);
-//     }
-//   }  
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+           to right,
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)),
+        url(../images/studio/overlay-768.jpg@2x.jpg);
+    }
+  }  
 
-//   @media screen and (min-width: 1200px) {
-//     max-width: 1600px;
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//     background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)),
-//       url(../images/studio/overlay-1600.jpg.jpg);
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+      url(../images/studio/overlay-1600.jpg.jpg);
      
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//            to right,
-//          rgba(47, 48, 58, 0.4),
-//          rgba(47, 48, 58, 0.4)),
-//         url(../images/studio/overlay-1600.jpg@2x.jpg);
-//     }
-//   }    
-// } 
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+           to right,
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)),
+        url(../images/studio/overlay-1600.jpg@2x.jpg);
+    }
+  }    
+} 
 
 .hero__hero-title {
 
