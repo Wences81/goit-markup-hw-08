@@ -13,6 +13,7 @@
 <body>
 
 
+
   <header class="site-header">
     
 
@@ -60,10 +61,11 @@
     <!-- Hero -->
 
     <section class="hero">
+      <div class="container">
 
       <h1 class="hero__hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
       <button data-modal-open type="button" class="hero__hero-button">Заказать услугу</button>
-
+      </div>
     </section>
 
 
@@ -157,7 +159,12 @@
 
       <ul class="team-list">
         <li class="team-list__item">
-          <img src="./images/teamcard1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+
+          <div class="team-list__thumb">
+          <img class="team-list__image" srcset="images/studio/igor_img.jpg 1x, images/studio/igor_img@2x.jpg 2x"
+            src="./images/studio/igor_img.jpg" alt="Игорь Демьяненко" width="270">
+          </div>
+
           <h3 class="team-list__title">Игорь Демьяненко</h3>
           <p class="team-list__text">Product Designer</p>
 
@@ -194,7 +201,12 @@
 
         </li>
         <li class="team-list__item">
-          <img src="./images/teamcard2.jpg" alt="Ольга Репина" width="270" height="260">
+
+          <div class="team-list__thumb">
+          <img class="team-list__image" srcset="images/studio/olga_img.jpg 1x, images/studio/olga_img@2x.jpg 2x"
+            src="./images/studio/olga_img.jpg" alt="Ольга Репина" width="270">
+          </div>
+
           <h3 class="team-list__title">Ольга Репина</h3>
           <p class="team-list__text">Frontend Developer</p>
 
@@ -231,7 +243,12 @@
 
         </li>
         <li class="team-list__item">
-          <img src="./images/teamcard3.jpg" alt="Николай Тарасов" width="270" height="260">
+
+          <div class="team-list__thumb">
+          <img class="team-list__image" srcset="images/studio/nicolaj_img.jpg 1x, images/studio/nicolaj_img@2x.jpg 2x"
+            src="./images/studio/nicolaj_img.jpg" alt="Николай Тарасов" width="270">
+          </div>
+
           <h3 class="team-list__title">Николай Тарасов</h3>
           <p class="team-list__text">Marketing</p>
 
@@ -268,7 +285,12 @@
 
         </li>
         <li class="team-list__item">
-          <img src="./images/teamcard4.jpg" alt="Михаил Ермаков" width="270" height="260">
+
+          <div class="team-list__thumb">
+          <img class="team-list__image" srcset="images/studio/michail_img.jpg 1x, images/studio/michail_img@2x.jpg 2x"
+            src="./images/studio/michail_img.jpg" alt="Михаил Ермаков" width="270">
+          </div>
+
           <h3 class="team-list__title">Михаил Ермаков</h3>
           <p class="team-list__text">UI Designer</p>
 
@@ -469,6 +491,8 @@
 
   </footer>
 
+  <!-- MODAL MENU -->
+
   <div data-modal class="backdrop is-hidden">
 
     <div class="modal">
@@ -541,25 +565,74 @@
   
   </div>
 
+  <!-- MOBILE MENU -->
+  
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
       <svg width="40px" height="40px">
         <use class="icon-close" href="./images/sprite.svg#icon-close_40px"></use>
       </svg>
     </button>
-
+  
     <ul class="mobile-menu">
+      <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__link--active">Студия</a></li>
+      <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+      <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+    </ul>
+  
+    <ul class="mobile-nav">
+
+      <li class="mobile-nav__item-tel"><a href="tel:+380961111111" class="mobile-nav__link-tel">
+      
+          +380961111111</a>
+      </li>
+
+      <li class="mobile-nav__item-mailto">
+        <a href="mailto:info@devstudio.com" class="mobile-nav__link-mailto">
+          
+          info@devstudio.com</a>
+      </li>
       
     </ul>
-
+  
+    <ul class="social-mobile">
+  
+      <li class="social-mobile__item">
+        <a class="social-mobile__link" href="#">
+          instagram
+        </a>
+      </li>
+      <li class="social-mobile__item">
+        <a class="social-mobile__link" href="#">
+          twitter
+        </a>
+      </li>
+      <li class="social-mobile__item">
+        <a class="social-mobile__link" href="#">
+          facebook
+        </a>
+      </li>
+      <li class="social-mobile__items">
+        <a class="social-mobile__link" href="#">
+  
+          linkedin
+        </a>
+      </li>
+    </ul>
+  
   </div>
 
+  
+  <!-- JAVA SCRIPT -->
 
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
 
   <script src="./js/modal.js"></script>
 
   
-  <script defer src="./js/mobile.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
   
 </body>
 </html>
