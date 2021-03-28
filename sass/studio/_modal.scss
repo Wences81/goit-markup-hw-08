@@ -25,8 +25,7 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+
   left: 50%;
   top: 50%;
   padding: 40px;
@@ -37,6 +36,20 @@
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 450px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    ;
+  }
 
 }
 
@@ -72,15 +85,31 @@
   
   color: var(--black-text);
 
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {  
 
-  margin-bottom: 12px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;}
+
+  @media screen and (max-width: 1199px) {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+  }
 
 }
 
@@ -117,17 +146,14 @@
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: non;
+  outline: none;}
 
-  &:focus {
-    border-color: var(--blue-text);}
+.signup-form__input:focus {
+  border-color: var(--blue-text);}
 
-  &:focus + & {
-    fill: var(--blue-text);}
+.signup-form__input:focus + .signup-form__icon {
+  fill: var(--blue-text);}
 
-
-}
-  
 
 .signup-form__input-wrapper {
   position: relative;
@@ -211,13 +237,22 @@
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  
   letter-spacing: 0.03em;
 
   text-align: center;
 
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  } 
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
   
   
 
@@ -238,6 +273,7 @@
   color: var(--blue-text);
 
   margin-left: 5px;
+
 
  
 }

@@ -1,12 +1,49 @@
-.button-list {
-  display: flex;
-}
-
 .card-button {
-  padding: 94px 0;
 
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;}
+
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
 }
 
+.button-list {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding-left: 0px;}
+
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+
+}  
+
+.button-list__item-button {
+  margin-right: 8px;
+}
+
+
+.button-list__item-button:nth-child(-n + 3) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
 
 .card-button__filtr-button {
   color: var(--black-text);
@@ -34,22 +71,7 @@
   }
 
 
-  
-
-
 }
 
-
-.button-list {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  justify-content: center;
-  padding-left: 0;
-
-
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
   
-}
 
