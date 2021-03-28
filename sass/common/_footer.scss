@@ -24,6 +24,14 @@
   
 }
 
+.futer-first {
+  @media screen and (max-width: 480px) {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 .footer-logo {
   @media screen and (min-width: 480px) {
@@ -159,6 +167,12 @@
     margin-top: 60px;
     margin-bottom: 60px;
   } 
+
+  @media screen and (max-width: 480px) {
+    margin-left: 90px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 
@@ -175,6 +189,10 @@
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     padding-left: 30px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-left: 30px;
   }
 
 }
@@ -245,7 +263,7 @@
   @media screen and (min-width: 1200px) {
     display: inline;}
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
 
   }  
@@ -309,6 +327,12 @@
     margin-right: 0px;
   }
 
+  @media screen and (max-width: 480px) {
+    width: 350px;
+    margin-right: 0px;
+    margin-left: 0;
+  }
+
 
 }
 
@@ -320,6 +344,10 @@
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     margin-top: 20px;
   }  
+
+  @media screen and (max-width: 480px) {
+    margin-top: 20px;
+  }
 }
 
 
