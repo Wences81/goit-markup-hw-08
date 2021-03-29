@@ -136,10 +136,7 @@
 .auth-nav__link {
   color: var(--grey-text);
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+ 
 
   text-decoration: none;
 
@@ -153,6 +150,21 @@
   &:hover,
   &:focus {
     color: var(--blue-text);}
+
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (min-width:768px) and (max-width: 1199px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
 
 }
 
